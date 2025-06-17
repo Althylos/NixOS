@@ -8,5 +8,6 @@
         vscode-fhs
         qbittorrent
         piper #configure mouse
+        flameshot #screenshot tool
     ];
 }
