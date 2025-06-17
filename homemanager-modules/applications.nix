@@ -10,5 +10,6 @@
         piper #configure mouse
         flameshot #screenshot tool
         openvpn
+        freetube
     ];
 }
