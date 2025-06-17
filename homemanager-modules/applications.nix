@@ -2,7 +2,7 @@
     home.packages = with pkgs; [
         discord
         hardinfo2 #hardware information
-        keepass
+        keepassxc
         haruna #anime video player
         vlc
         vscode-fhs
