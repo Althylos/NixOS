@@ -12,5 +12,6 @@
         openvpn
         freetube
         heroic #games launcher for GOG, epic and Amazon
+        vim
     ];
 }
