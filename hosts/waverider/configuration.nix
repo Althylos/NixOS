@@ -64,7 +64,7 @@
   users.users.al = {
     isNormalUser = true;
     description = "Al";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "input" ];
     packages = with pkgs; [
       kdePackages.kate
     #  thunderbird

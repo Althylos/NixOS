@@ -3,7 +3,7 @@
         discord
         hardinfo2 #hardware information
         keepassxc
-        haruna #anime video player
+        haruna #video player
         vlc
         vscode-fhs
         qbittorrent
@@ -13,5 +13,6 @@
         freetube
         heroic #games launcher for GOG, epic and Amazon
         vim
+        google-chrome
     ];
 }

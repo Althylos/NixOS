@@ -13,6 +13,8 @@
       spicetify-nix = {
         url = "github:Gerg-L/spicetify-nix";
       };
+
+      tidal-overlay.url = "github:mitchmindtree/tidalcycles.nix";
   };
 
 
@@ -23,18 +25,29 @@
     nixpkgs-stable,
     home-manager,
     spicetify-nix,
+    tidal-overlay,
     }@inputs:
     let
       system = "x86_64-linux";
+      pkgs = import nixpkgs {
+      inherit system;
+        overlays = [
+          tidal-overlay.overlays.default
+        ];
+        config = {
+          allowUnfree = true;
+        };
+      };
     in
     {
+      devShells.${system}.tidal = tidal-overlay.devShells.${system}.tidal;
       nixosConfigurations.waverider = nixpkgs.lib.nixosSystem {
         specialArgs = {
           pkgs-stable = import nixpkgs-stable {
             inherit system;
             config.allowUnfree = true;
           };
-          inherit inputs system;
+          inherit inputs system pkgs;
         };
 
         modules = [

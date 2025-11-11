@@ -2,6 +2,10 @@
     # Enable sound with pipewire.
     services.pulseaudio.enable = false;
     security.rtkit.enable = true;
+    environment.systemPackages = [
+      pkgs.pipewire.jack
+    ];
+
     services.pipewire = {
         enable = true;
         alsa.enable = true;
