@@ -14,5 +14,11 @@
         heroic #games launcher for GOG, epic and Amazon
         vim
         google-chrome
+        libreoffice
+        kdePackages.kalk #calculator
+        kdePackages.kpat #solitaire
+        kdePackages.picmi #nonogram game
+        prismlauncher
+        file-roller
     ];
 }
