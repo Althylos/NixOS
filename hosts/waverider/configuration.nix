@@ -17,6 +17,7 @@
       ../../nix-modules/kde/default.nix
       ../../nix-modules/nh.nix
       ../../nix-modules/git.nix
+      ../../nix-modules/anki.nix
       ./session-variables.nix
       ./filesystem.nix
     ];
