@@ -20,5 +20,6 @@
         kdePackages.picmi #nonogram game
         prismlauncher
         file-roller
+        signal-desktop
     ];
 }
