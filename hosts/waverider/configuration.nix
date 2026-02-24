@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ../../nix-modules/bootloader.nix
       ../../nix-modules/bluetooth.nix
       ../../nix-modules/sound.nix
       ../../nix-modules/packages.nix
@@ -27,9 +28,6 @@
       "flakes"
     ];
 
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "waverider"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
