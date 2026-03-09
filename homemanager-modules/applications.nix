@@ -23,5 +23,6 @@
         signal-desktop
         mediawriter
         p7zip #7zip opener
+        filezilla #ftp client
     ];
 }
