@@ -10,5 +10,5 @@
 
   programs.gamemode.enable = true;
 
-  environment.systemPackages = with pkgs; [mangohud protonup-qt lutris bottles heroic wine winetricks vulkan-tools vulkan-loader];
+  environment.systemPackages = with pkgs; [mangohud protonup-qt heroic wine winetricks vulkan-tools vulkan-loader];
 }
