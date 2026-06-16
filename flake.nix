@@ -60,7 +60,12 @@
           config.allowUnfree = true;
         };
         modules = [ ./users/al/home.nix ];
-        extraSpecialArgs = { inherit inputs; };
+        extraSpecialArgs = { inherit inputs;
+          pkgs-stable = import nixpkgs-stable {
+          inherit system;
+          config.allowUnfree = true;
+          };
+        };
       };
 
 
