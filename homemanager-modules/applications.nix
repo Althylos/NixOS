@@ -26,5 +26,6 @@
         pkgs.filezilla #ftp client
         pkgs-stable.lutris
         pkgs-stable.bottles
+        pkgs.krita #painting
     ];
 }
