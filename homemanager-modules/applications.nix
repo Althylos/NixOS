@@ -28,5 +28,6 @@
         pkgs-stable.bottles
         pkgs.krita #painting
         pkgs.kdePackages.ghostwriter #writing tool
+        pkgs.obsidian
     ];
 }
