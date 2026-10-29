@@ -29,5 +29,6 @@
         pkgs.krita #painting
         pkgs.kdePackages.ghostwriter #writing tool
         pkgs.obsidian
+        pkgs.python314
     ];
 }
